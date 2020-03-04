@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
     <title>Show Page</title>
   </head>
@@ -30,8 +30,8 @@
     </p>
     <button type="button" name="buy">BUY</button>
     <form action="/parts/new"><input type="submit" value="REQUEST NEW PART"/></form>
-    <form action="/parts/<%=id%>/edit"><input type="submit" value="EDIT"/></form>
-    <form action="/parts/<%=id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
+    <form action="/parts/<%=part.id%>/edit"><input type="submit" value="EDIT"/></form>
+    <form action="/parts/<%=part.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
 
     <footer>
       <p>Thanks for visiting Retro Auto Parts!</p>

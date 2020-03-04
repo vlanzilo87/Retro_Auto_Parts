@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
 
     <title>Index Page</title>
@@ -23,7 +23,7 @@
     <div class="big-container">
       <% for (let i=0; i < allParts.length; i++) { %>
       <div class="flex-container">
-        <a href="/parts/<%=i%>"><img src="<%=allParts[i].img%>" width="200" height="200"></a>
+        <a href="/parts/<%=allParts[i].id%>"><img src="<%=allParts[i].img%>" width="200" height="200"></a>
         <br>
         <h4><%=allParts[i].name%></h4>
         <br>
