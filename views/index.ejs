@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+
+    <title>Index Page</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <h1>Retro Auto Parts</h1>
+      </div>
+    </header>
+    <nav>
+      <a href="/parts/new">Request New Part</a>
+      <a href="/about">About</a>
+    </nav>
+    <h1>Parts Index</h1>
+    <div class="big-container">
+      <% for (let i=0; i < allParts.length; i++) { %>
+      <div class="flex-container">
+        <a href="/parts/<%=i%>"><img src="<%=allParts[i].img%>" width="200" height="200"></a>
+        <br>
+        <h4><%=allParts[i].name%></h4>
+        <br>
+      </div>
+      <% } %>
+      <footer>
+        <p>Thanks for visiting Retro Auto Parts!</p>
+      </footer>
+    </div>
+
+  </body>
+</html>

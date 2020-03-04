@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
+        <title>New Page</title>
+    </head>
+    <body>
+      <header>
+        <div class="banner">
+          <h1>Retro Auto Parts</h1>
+        </div>
+      </header>
+      <nav>
+        <a href="/parts">Back to Index</a>
+        <a href="/about">About</a>
+      </nav>
+      <h1>New Part Request Page</h1>
+      <div class="new">
+      <form action="/parts" method="POST">
+          Name: <input type="text" name="name" /><br/>
+          Description: <input type="text" name="description" /><br/>
+          <!-- //Image: <input type="text" name="image" /><br/>// -->
+          Vehicle: <input type="number" name="price" /><br/>
+          Quantity: <input type="number" name="quantity" /><br/>
+          <input id="new" type="submit" name="" value="Request Part"/>
+      </form>
+      </div>
+      <footer>
+        <p>Thanks for visiting Retro Auto Parts!</p>
+      </footer>
+    </body>
+</html>

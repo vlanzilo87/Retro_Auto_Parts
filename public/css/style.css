@@ -1,0 +1,81 @@
+body {
+  background: darkgreen;
+}
+
+header {
+  background: purple;
+}
+
+h1 {
+  text-align: center;
+  color: lime;
+  font-family: 'Faster One', cursive;
+}
+
+h4 {
+  text-align: center;
+}
+
+nav {
+  background: purple;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: 'Faster One', cursive;
+}
+
+.new {
+  text-align: center;
+}
+
+.welcome {
+  background-image: url("https://pbs.twimg.com/media/C5tREVBU8AA7sZH.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.enter {
+  text-align: center;
+  font-family: 'Faster One', cursive;
+}
+
+.big-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+/* .flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+
+.banner {
+  background: url("https://ricardoe30.files.wordpress.com/2010/12/cropped-e30-banner1.jpg");
+  text-align: center;
+  margin: 0 auto;
+  padding: 100px;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Faster One', cursive;
+}
+
+#new {
+  font-family: 'Faster One', cursive;
+}
+
+footer {
+  text-align: center;
+  background: purple;
+  color: white;
+  padding-top: 10px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
