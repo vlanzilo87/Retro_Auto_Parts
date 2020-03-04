@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: darkgrey;
+  color: darkblue;
   font-family: 'Faster One', monospace;
 }
 
@@ -72,7 +72,7 @@ img {
   background: url("https://ricardoe30.files.wordpress.com/2010/12/cropped-e30-banner1.jpg");
   text-align: center;
   margin: 0 auto;
-  padding: 100px;
+  padding: 120px;
   background-size: cover;
   background-position: center;
   font-family: 'Faster One', monospace;
