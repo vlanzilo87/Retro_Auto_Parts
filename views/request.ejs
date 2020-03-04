@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Faster+One&display=swap" rel="stylesheet">
 
-    <title>Index Page</title>
+    <title>Requests Page</title>
   </head>
   <body>
     <header>
@@ -19,16 +19,8 @@
       <a href="/parts/new">Request New Part</a>
       <a href="/about">About</a>
     </nav>
-    <h2>Parts Index</h2>
+    <h2>Request Index</h2>
     <div class="big-container">
-      <% for (let i=0; i < allParts.length; i++) { %>
-      <div class="flex-container">
-        <a href="/parts/<%=allParts[i].id%>"><img src="<%=allParts[i].img%>" width="200" height="200"></a>
-        <br>
-        <h4><%=allParts[i].name%></h4>
-        <br>
-      </div>
-      <% } %>
       <footer>
         <p>Thanks for visiting Retro Auto Parts!</p>
       </footer>

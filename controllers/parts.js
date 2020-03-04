@@ -105,7 +105,6 @@ parts.get('/parts', (req, res) => {
   })
 })
 
-
 //Create
 parts.post('/parts', (req, res) => {
   Part.create(req.body, (err, createdPart) => {
@@ -132,6 +131,11 @@ parts.delete('/parts/:id', (req, res) => {
   Part.findByIdAndRemove(req.params.id, (err, deletedPart) => {
     res.redirect('/parts')
   })
+})
+
+//Requested parts
+parts.get('/parts/request', (req, res) => {
+  res.render('request.ejs')
 })
 
 //Show

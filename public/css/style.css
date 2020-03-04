@@ -1,5 +1,5 @@
 body {
-  background: darkgreen;
+  background: lightblue;
 }
 
 header {
@@ -9,7 +9,13 @@ header {
 h1 {
   text-align: center;
   color: lime;
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', monospace;
+}
+
+h2 {
+  text-align: center;
+  color: yellow;
+  font-family: 'Faster One', monospace;
 }
 
 h4 {
@@ -22,7 +28,12 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', monospace;
+}
+
+img {
+  border-radius: 20%;
+  border: 5px solid purple;
 }
 
 .new {
@@ -38,7 +49,7 @@ nav {
 
 .enter {
   text-align: center;
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', monospace;
 }
 
 .big-container {
@@ -47,7 +58,8 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     position: relative;
-    padding-bottom: 50px;
+    font-family: monospace;
+    padding-bottom: 10%;
 }
 
 /* .flex-container {
@@ -63,19 +75,52 @@ nav {
   padding: 100px;
   background-size: cover;
   background-position: center;
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', monospace;
 }
 
 #new {
-  font-family: 'Faster One', cursive;
+  font-family: 'Faster One', monospace;
 }
 
 footer {
   text-align: center;
   background: purple;
   color: white;
-  padding-top: 10px;
+  padding-top: 20px;
   bottom: 0;
   position: absolute;
   width: 100%;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+.paragraph {
+  margin: 20px 100px;
+  padding: 10px;
+  border: 10px solid lime;
+  color: lightgrey;
+  background-color: purple;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.show {
+  position: relative;
+  padding-bottom: 100px;
+  text-align: center;
+  font-family: 'Faster One', monospace;
+  font-size: 20px;
+}
+
+.edit {
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.list {
+  font-family: 'Faster One', monospace;
+  font-size: 30px;
+  color: red;
 }

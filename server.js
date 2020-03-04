@@ -31,7 +31,10 @@ app.get('/about', (req, res) => {
   res.render('about.ejs')
 })
 
-app.listen(PORT)
+//Listener
+app.listen(PORT, () => {
+  console.log('listening on port', PORT)
+})
 
 //Mongoose
 mongoose.connect(mongoURI, {useNewUrlParser:true, useUnifiedTopology:true}, () => {

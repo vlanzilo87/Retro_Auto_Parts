@@ -16,25 +16,31 @@
     </header>
     <nav>
       <a href="/parts">Back to Index</a>
-      <a href="#">About</a>
+      <a href="/about">About</a>
     </nav>
-    <h1>Part Show Page</h1>
-    <p>
+    <h2>Part Show Page</h2>
+    <div class="show">
       <img src="<%=part.img%>" width="300" height="300">
       <br>
-      <%=part.name%>
       <br>
-      <%=part.price%>
+      <div class="list">
+        <%=part.name%>
+        <br>
+        <%=part.price%>
+        <br>
+        <%=part.qty%>
+        <br>
+      </div>
       <br>
-      <%=part.qty%>
-    </p>
-    <button type="button" name="buy">BUY</button>
-    <form action="/parts/new"><input type="submit" value="REQUEST NEW PART"/></form>
-    <form action="/parts/<%=part.id%>/edit"><input type="submit" value="EDIT"/></form>
-    <form action="/parts/<%=part.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
-
-    <footer>
-      <p>Thanks for visiting Retro Auto Parts!</p>
-    </footer>
+      <button type="button" name="buy">BUY</button>
+      <form action="/parts/new"><input type="submit" value="REQUEST NEW PART"/></form>
+      <form action="/parts/<%=part.id%>/edit"><input type="submit" value="EDIT"/></form>
+      <form action="/parts/<%=part.id%>?_method=DELETE" method="POST"><input type="submit" value="DELETE"/></form>
+      <div class="footer">
+        <footer>
+          <p>Thanks for visiting Retro Auto Parts!</p>
+        </footer>
+      </div>
+    </div>
   </body>
 </html>
