@@ -14,7 +14,7 @@ h1 {
 
 h2 {
   text-align: center;
-  color: yellow;
+  color: darkgrey;
   font-family: 'Faster One', monospace;
 }
 
@@ -33,7 +33,7 @@ nav {
 
 img {
   border-radius: 20%;
-  border: 5px solid purple;
+  border: 5px solid lime;
 }
 
 .new {
