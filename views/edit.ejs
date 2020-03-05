@@ -17,7 +17,7 @@
       <nav>
         <a href="/parts/new">Request New Part</a>
         <a href="/parts">Back to Index</a>
-        <a href="#">About</a>
+        <a href="/about">About</a>
       </nav>
       <h2>Edit Part Page</h2>
       <div class="edit">
@@ -27,7 +27,7 @@
           Image: <input type="text" name="image" value="<%=part.img%>"/><br/>
           Price: <input type="number" name="price" value="<%=part.price%>"/><br/>
           Quantity: <input type="number" name="quantity" value="<%=part.qty%>"/><br/>
-          <input type="submit" value="Edit Part"/>
+          <input id="edit" type="submit" value="Edit Part"/>
         </form>
       </div>
       <footer>
